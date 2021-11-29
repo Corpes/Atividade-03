@@ -1,32 +1,18 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {Component} from 'react';
+import {StyleSheet, Text, View} from 'react-native';
 
-//import Aluno from './components/Aluno'
-//import Professor from './components/Professor'
-
-import Cabecalho from './components/Cabecalho'
-import Disciplina from './components/Disciplina';
-import Corpo from './components/Corpo'
+import Calculadora from './components/IMC';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Corpo/>
-      <Cabecalho 
-      nome='Chris Rock'
-      curso= 'Design Digital' />
-      <Disciplina 
-      disciplina='PIDM'
-      disciplina='Sociologia'/>
-    </View>
+  return(
+    <Calculadora></Calculadora>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    margin: '20px'
   },
 });
